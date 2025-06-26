@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanaveska | Contacte</title>
+    <link rel="icon" href="favlogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<header>
+    <div class="headerFlexBox">
+        <div><img src="logo.jpg" alt="logo" class="logo" id="logoBtn"></div>
+        <div class="search-container">
+            <input type="text" class="searchbar" name="searchbar" placeholder="Căutare...">
+            <input type="button" class="Searchbar_submit" onclick="document.location='index.html'" name="searchbar_submit">
+        </div>
+        <div></div>
+        <div><img src="phoneblank.jpg" alt="phoneblank" class="phone" id="phoneBtn"></div>
+    </div>
+</header>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="index.html" onclick="">Acasa</a>
+        <a href="products.html">Produse</a>
+        <a href="services.html">Servicii</a>
+        <a href="cabinet-personal.html">Cabinet personal</a>
+        <a href="about-us.html">Despre noi</a>
+        <a href="stalker.html">Urmărește-ne</a>
+        <a href="payment-info.html">Info achitare</a>
+        <a href="contacts.html">Contacte</a>
+    </div>
+    <div id="chatContainer" class="chat-container">
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Message...">
+            <button id="sendBtn">Trimite</button>
+        </div>
+    </div>
+
+    <div class="main-content" id="main">
+
+       <div class="main-info">
+          <div><h1 class="contacth1">Contacteaza-ne</h1></div>
+          <div><p class="contactp">Ai întrebări sau vrei să afli mai multe despre produsele noastre? Suntem aici să te ajutăm!</p></div>
+       </div>
+    <div class="ticketBG"><div class="ticketlab">TICKET</div>
+        <div class="ticketform"><form>
+            
+               <div>  <label class="nickname-label">Nume</label>  </div>
+               <div>  <input type="name" class="nickname">  </div>
+               <div>  <label class="email-label">Email</label>  </div>
+               <div>  <input type="email" class="mail">  </div>
+               <div>  <label class="message-label">Mesaj</label>  </div>
+               <div>  <textarea class="mesage" id="msg"></textarea>  </div>
+               <div style="display: flex;">  <input type="checkbox" class="sure" id="sure">
+               <p style="color: black;
+                font-family:'Lucida Sans',
+                 'Lucida Sans Regular', 
+                 'Lucida Grande', 
+                 'Lucida Sans Unicode', 
+                 Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                font-size: 15px;">
+                Sunt de acord sa primesc mesaje</p></div>
+               <div>  <input type="submit" class="submitTicket-btn" value="Trimite">  </div></form>
+        </div>
+    </div>
+
+</div>
+    <div id="map"></div>
+</div>
+    
+        <div class="flex-info_elements">
+
+            <div class="clock-flex">
+                <div><img src="info_items/clock.png" alt="clock" height="24px" width="24px"></div>
+                <div style="color:white;">Orar de lucru</div>
+                <div>Luni - Vineri / 10:00 - 18:00</div>
+                <div>Sambata / 10:00 - 15:00</div>
+            </div>
+
+            <div class="loc-flex">
+                <div><img src="info_items/locpoint.png" alt="location" height="24px" width="24px"></div>
+                <div style="color:white;">Adresa</div>
+                
+                <div>Sarmizegetusa 48/9</div> 
+            </div>
+
+            <div class="phone-flex">
+                <div><img src="info_items/phone.png" alt="phone" height="24px" width="24px"></div>
+                <div style="color:white;">Telefon</div>
+                <div>069 430 411</div>
+            </div>
+
+            <div class="mail-flex">
+                <div><img src="info_items/email.png" alt="mail" height="24px" width="24px"></div>
+                <div style="color:white;">Email</div>
+                <div>zanaveska@mail.com</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+    <script>
+        // Initialize the map after the API is loaded
+        ymaps.ready(init);
+        
+        function init() {
+            var columnaCoords = [46.984697, 28.870200]; 
+            
+            var map = new ymaps.Map("map", {
+                center: columnaCoords,
+                zoom: 16
+            });
+
+            var marker = new ymaps.Placemark(
+                columnaCoords,
+                {
+                    hintContent: "Zanaveska Location",
+                    balloonContent: "<b>Zanaveska</b><br>Magazinul nostru"
+                },
+                {
+                    preset: 'islands#redIcon' 
+                }
+            );
+
+            map.geoObjects.add(marker);
+            
+            map.controls.remove('geolocationControl');
+            map.controls.remove('searchControl');
+            map.controls.remove('trafficControl');
+            map.controls.remove('typeSelector');
+            map.controls.remove('fullscreenControl');
+            map.controls.remove('rulerControl');
+        }
+    </script>
+    
+    <script src="script.js"></script>
+
+
+    
+</body>
+
+<footer style="
+background-color: #111;
+border-top: 1px solid #FF21F0;
+padding: 20px 0;
+margin-top: 50px;
+text-align: center;
+">
+
+<div style="
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+">
+
+    <div style="color: #777; font-size: 14px;">
+        © 2025 Zanaveska. Toate drepturile sunt rezervate.
+    </div>
+
+    <div style="display: flex; gap: 15px;">
+
+        <a href="payment-info.html" style="color: #777; text-decoration: none; transition: 0.3s;" 
+           onmouseover="this.style.color='#FF21F0'" onmouseout="this.style.color='#777'">
+            Termeni și condiții
+        </a>
+
+        <a href="#" 
+        style="color: #777; text-decoration: none; transition: 0.3s;" 
+        onmouseover="this.style.color='#FF21F0'" 
+        onmouseout="this.style.color='#777'"
+        onclick="showPrivacyPolicy(); return false;">
+         Politica de confidențialitate
+     </a>
+     
+     <!-- Модальное окно -->
+     <div id="privacyModal" style="
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0,0,0,0.7);
+         z-index: 10000;
+         justify-content: center;
+         align-items: center;
+     ">
+         <div style="
+             background-color: #222;
+             padding: 30px;
+             border-radius: 10px;
+             border: 2px solid #FF21F0;
+             max-width: 600px;
+             max-height: 80vh;
+             overflow-y: auto;
+         ">
+             <h2 style="color: #FF21F0; margin-top: 0;">Politica de confidențialitate</h2>
+             
+             <div style="color: white; line-height: 1.6;">
+                 <p><strong>1. Datele colectate</strong><br>
+                 Colectăm doar informațiile necesare pentru procesarea comenzilor: nume, email, telefon și adresă de livrare.</p>
+                 
+                 <p><strong>2. Utilizarea datelor</strong><br>
+                 Informațiile dumneavoastră sunt folosite exclusiv pentru:
+                 - Procesarea comenzilor
+                 - Comunicări legate de comandă
+                 - Îmbunătățirea serviciilor noastre</p>
+                 
+                 <p><strong>3. Protecția datelor</strong><br>
+                 Folosim măsuri de securitate avansate pentru protejarea informațiilor dumneavoastră.</p>
+                 
+                 <p><strong>4. Drepturile dumneavoastră</strong><br>
+                 Aveți dreptul de a solicita accesul, ștergerea sau corectarea datelor dumneavoastră personale.</p>
+                 
+                 <p><strong>5. Cookie-uri</strong><br>
+                 Site-ul folosește cookie-uri pentru funcționalități de bază și analiză trafic.</p>
+             </div>
+             
+             <button onclick="closePrivacyModal()" style="
+                 background-color: #FF21F0;
+                 color: black;
+                 border: none;
+                 padding: 10px 20px;
+                 margin-top: 20px;
+                 border-radius: 5px;
+                 cursor: pointer;
+                 font-weight: bold;
+             ">Am înțeles</button>
+         </div>
+     </div>
+
+    </div>
+</div>
+
+</footer>
+</html>

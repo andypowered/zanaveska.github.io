@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanaveska - Metode de Plată</title>
+    <link rel="icon" href="favlogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerFlexBox">
+            <div><img src="logo.jpg" alt="logo" class="logo" id="logoBtn"></div>
+            <div class="search-container">
+                <input type="text" class="searchbar" name="searchbar" placeholder="Căutare...">
+                <input type="button" class="Searchbar_submit" onclick="document.location='index.html'" name="searchbar_submit">
+            </div>
+            <div></div>
+            <div><img src="phoneblank.jpg" alt="phoneblank" class="phone" id="phoneBtn"></div>
+        </div>
+    </header>
+
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="index.html">Acasă</a>
+        <a href="products.html">Produse</a>
+        <a href="services.html">Servicii</a>
+        <a href="cabinet-personal.html">Cabinet personal</a>
+        <a href="about-us.html">Despre noi</a>
+        <a href="stalker.html">Urmărește-ne</a>
+        <a href="payment-info.html">Info achitare</a>
+        <a href="contacts.html">Contacte</a>
+    </div>
+
+    <div id="chatContainer" class="chat-container">
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Scrieți mesajul...">
+            <button id="sendBtn">Trimite</button>
+        </div>
+    </div>
+    
+    <div class="main-content" id="main">
+        <section class="payment-hero">
+            <div class="hero-content">
+                <h1><i class="fas fa-credit-card"></i> Metode de Plată</h1>
+                <p>Alegeți modalitatea cea mai convenabilă pentru dumneavoastră</p>
+            </div>
+        </section>
+
+        <section class="payment-methods">
+            <div class="payment-container">
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fab fa-cc-visa"></i>
+                    </div>
+                    <h3>Card Visa</h3>
+                    <p>Plăți sigure prin intermediul cardurilor Visa</p>
+                    <div class="method-info">
+                        <span><i class="fas fa-check-circle"></i> Instant</span>
+                        <span><i class="fas fa-shield-alt"></i> Securizat</span>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fab fa-cc-mastercard"></i>
+                    </div>
+                    <h3>Mastercard</h3>
+                    <p>Acceptăm toate cardurile Mastercard</p>
+                    <div class="method-info">
+                        <span><i class="fas fa-check-circle"></i> Instant</span>
+                        <span><i class="fas fa-shield-alt"></i> Securizat</span>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Paynet</h3>
+                    <p>Plăți prin terminalele Paynet</p>
+                    <div class="method-info">
+                        <span><i class="fas fa-check-circle"></i> Instant</span>
+                        <span><i class="fas fa-store"></i> Peste 500+ locații</span>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Qiwi</h3>
+                    <p>Transfer rapid prin Qiwi Wallet</p>
+                    <div class="method-info">
+                        <span><i class="fas fa-check-circle"></i> 1-2 ore</span>
+                        <span><i class="fas fa-mobile-alt"></i> Prin aplicație</span>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Crypto Pay</h3>
+                    <p>Plăți în criptomonede</p>
+                    <div class="method-info">
+                        <span><i class="fas fa-check-circle"></i> Instant</span>
+                        <span><i class="fas fa-lock"></i> Anonim</span>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>BPay</h3>
+                    <p>Transfer bancar prin BPay</p>
+                    <div class="method-info">
+                        <span><i class="fas fa-check-circle"></i> 1 zi lucrătoare</span>
+                        <span><i class="fas fa-bank"></i> Orice bancă</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-terms">
+            <div class="terms-container">
+                <h2><i class="fas fa-file-contract"></i> Termeni și Condiții</h2>
+                <div class="terms-grid">
+                    <div class="term-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>Livrare</h3>
+                        <p>3-5 zile lucrătoare în Moldova</p>
+                    </div>
+                    
+                    <div class="term-card">
+                        <div></div>
+                        <i class="fas fa-exchange-alt"></i>
+                        <h3>Ramburs</h3>
+                        <p>Returnare în 14 zile de la primire</p>
+                    </div>
+                    
+                    <div class="term-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Securitate</h3>
+                        <p>Plăți 100% securizate</p>
+                    </div>
+                    
+                    <div class="term-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Garantie</h3>
+                        <p>12 luni pentru defecte</p>
+                    </div>
+                    
+                    <div class="term-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Suport</h3>
+                        <p>Asistență 24/7</p>
+                    </div>
+                </div>
+                
+                <div class="full-terms">
+                    <p>Pentru detalii suplimentare sau întrebări despre politicile noastre, vă rugăm să ne contactați prin pagina <a href="contacts.html">Contacte</a> sau prin chat-ul nostru live.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-faq">
+            <h2><i class="fas fa-question-circle"></i> Întrebări Frecvente</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Cum pot plăti comanda?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Puteți plăti comanda folosind oricare dintre metodele afișate mai sus. După finalizarea comenzii, veți primi instrucțiuni detaliate pentru plata selectată.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Este sigur să plătesc online?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Da, toate tranzacțiile online sunt procesate prin pasarele de plată securizate cu criptare SSL. Nu stocăm detalile cardurilor de credit.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Cât durează procesarea plății?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Plățile cu cardul sunt procesate instant. Transferurile bancare pot dura până la 1 zi lucrătoare. Plățile în numerar la livrare sunt confirmate imediat ce primim banii.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Pot returna produsele dacă nu sunt mulțumit?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Da, aveți dreptul la returnarea produselor în termen de 14 zile de la primire, conform legislației în vigoare. Banii vor fi returnați prin aceeași metodă de plată.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+<footer style="
+background-color: #111;
+border-top: 1px solid #FF21F0;
+padding: 20px 0;
+margin-top: 50px;
+text-align: center;
+">
+
+<div style="
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+">
+
+    <div style="color: #777; font-size: 14px;">
+        © 2025 Zanaveska. Toate drepturile sunt rezervate.
+    </div>
+
+    <div style="display: flex; gap: 15px;">
+
+        <a href="payment-info.html" style="color: #777; text-decoration: none; transition: 0.3s;" 
+           onmouseover="this.style.color='#FF21F0'" onmouseout="this.style.color='#777'">
+            Termeni și condiții
+        </a>
+
+        <a href="#" 
+        style="color: #777; text-decoration: none; transition: 0.3s;" 
+        onmouseover="this.style.color='#FF21F0'" 
+        onmouseout="this.style.color='#777'"
+        onclick="showPrivacyPolicy(); return false;">
+         Politica de confidențialitate
+     </a>
+     
+     <!-- Модальное окно -->
+     <div id="privacyModal" style="
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0,0,0,0.7);
+         z-index: 10000;
+         justify-content: center;
+         align-items: center;
+     ">
+         <div style="
+             background-color: #222;
+             padding: 30px;
+             border-radius: 10px;
+             border: 2px solid #FF21F0;
+             max-width: 600px;
+             max-height: 80vh;
+             overflow-y: auto;
+         ">
+             <h2 style="color: #FF21F0; margin-top: 0;">Politica de confidențialitate</h2>
+             
+             <div style="color: white; line-height: 1.6;">
+                 <p><strong>1. Datele colectate</strong><br>
+                 Colectăm doar informațiile necesare pentru procesarea comenzilor: nume, email, telefon și adresă de livrare.</p>
+                 
+                 <p><strong>2. Utilizarea datelor</strong><br>
+                 Informațiile dumneavoastră sunt folosite exclusiv pentru:
+                 - Procesarea comenzilor
+                 - Comunicări legate de comandă
+                 - Îmbunătățirea serviciilor noastre</p>
+                 
+                 <p><strong>3. Protecția datelor</strong><br>
+                 Folosim măsuri de securitate avansate pentru protejarea informațiilor dumneavoastră.</p>
+                 
+                 <p><strong>4. Drepturile dumneavoastră</strong><br>
+                 Aveți dreptul de a solicita accesul, ștergerea sau corectarea datelor dumneavoastră personale.</p>
+                 
+                 <p><strong>5. Cookie-uri</strong><br>
+                 Site-ul folosește cookie-uri pentru funcționalități de bază și analiză trafic.</p>
+             </div>
+             
+             <button onclick="closePrivacyModal()" style="
+                 background-color: #FF21F0;
+                 color: black;
+                 border: none;
+                 padding: 10px 20px;
+                 margin-top: 20px;
+                 border-radius: 5px;
+                 cursor: pointer;
+                 font-weight: bold;
+             ">Am înțeles</button>
+         </div>
+     </div>
+
+    </div>
+</div>
+
+</footer>
+</body>
+</html>

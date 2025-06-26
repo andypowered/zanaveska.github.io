@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanaveska - Servicii</title>
+    <link rel="icon" href="favlogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+        <header>
+            <div class="headerFlexBox">
+                <div><img src="logo.jpg" alt="logo" class="logo" id="logoBtn"></div>
+                <div class="search-container">
+                    <input type="text" class="searchbar" name="searchbar" placeholder="Căutare...">
+                    <input type="button" class="Searchbar_submit" onclick="document.location='index.html'" name="searchbar_submit">
+                </div>
+                <div></div>
+                <div><img src="phoneblank.jpg" alt="phoneblank" class="phone" id="phoneBtn"></div>
+            </div>
+        </header>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="index.html">Acasă</a>
+        <a href="products.html">Produse</a>
+        <a href="services.html">Servicii</a>
+        <a href="cabinet-personal.html">Cabinet personal</a>
+        <a href="about-us.html">Despre noi</a>
+        <a href="stalker.html">Urmărește-ne</a>
+        <a href="payment-info.html">Info achitare</a>
+        <a href="contacts.html">Contacte</a>
+    </div>
+
+    <div class="main-content" id="main">
+        <section class="services-hero">
+            <div class="hero-content">
+                <h1>Servicii Premium de Textile</h1>
+                <p>Transformăm spațiile dumneavoastră cu soluții textile personalizate</p>
+            </div>
+        </section>
+
+        <section class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Consultanță la domiciliu</h3>
+                <p>Designerul nostru se deplasează la locația indicată pentru consultanță personalizată, indiferent de etapa proiectului.</p>
+                <div class="service-highlight">
+                    <i class="fas fa-check-circle"></i> Primă consultație gratuită
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-broom"></i>
+                </div>
+                <h3>Întreținere Textile</h3>
+                <p>Serviciu premium de întreținere și curățare specializată pentru a menține textilele impecabile.</p>
+                <div class="service-highlight">
+                    <i class="fas fa-shield-alt"></i> Garantie de calitate
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-ruler-combined"></i>
+                </div>
+                <h3>Măsurare & Soluții</h3>
+                <p>Evaluare profesională pentru cele mai potrivite soluții cromatice, de fixare și instalare.</p>
+                <div class="service-highlight">
+                    <i class="fas fa-lightbulb"></i> Soluții creative personalizate
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3>Confecționare</h3>
+                <p>Produse realizate manual din materii prime de calitate superioară, conform cerințelor proiectului.</p>
+                <div class="service-highlight">
+                    <i class="fas fa-star"></i> Unicitate și exclusivitate
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Instalare Profesională</h3>
+                <p>Echipă specializată pentru fixare, instalare și aranjare impecabilă a articolelor textile.</p>
+                <div class="service-highlight">
+                    <i class="fas fa-clipboard-check"></i> Rezultat garantat
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-couch"></i>
+                </div>
+                <h3>Tapiterie & Design</h3>
+                <p>Gamă variată de materiale pentru tapiterie și soluții complete de design interior.</p>
+                <div class="service-highlight">
+                    <i class="fas fa-palette"></i> Combinații armonioase
+                </div>
+            </div>
+        </section>
+
+        <section class="service-process">
+            <h2>Procesul Nostru de Lucru</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Consultare</h3>
+                    <p>Discutăm nevoile și preferințele dumneavoastră</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Proiectare</h3>
+                    <p>Creăm schițe și propuneri personalizate</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Confecționare</h3>
+                    <p>Realizăm produsele din materiale de calitate</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Instalare</h3>
+                    <p>Asigurăm montajul perfect al tuturor elementelor</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-cta">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Space?</h2>
+                <p>Contactați-ne pentru o consultație gratuită și un plan personalizat</p>
+                <a href="contacts.html" class="cta-button">Programează consultație</a>
+            </div>
+        </section>
+    </div>
+
+    <div id="chatContainer" class="chat-container">
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Message...">
+            <button id="sendBtn">Trimite</button>
+        </div>
+    </div>
+
+    <footer style="
+        background-color: #111;
+        border-top: 1px solid #FF21F0;
+        padding: 20px 0;
+        margin-top: 50px;
+        text-align: center;">
+        
+        <div style="
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;">
+            
+            <div style="color: #777; font-size: 14px;">
+                © 2025 Zanaveska. Toate drepturile sunt rezervate.
+            </div>
+
+            <div style="display: flex; gap: 15px;">
+                <a href="#" style="color: #777; text-decoration: none; transition: 0.3s;" 
+                   onmouseover="this.style.color='#FF21F0'" onmouseout="this.style.color='#777'">
+                    Termeni și condiții
+                </a>
+
+                <a href="#" style="color: #777; text-decoration: none; transition: 0.3s;" 
+                   onmouseover="this.style.color='#FF21F0'" onmouseout="this.style.color='#777'">
+                    Politica de confidențialitate
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
