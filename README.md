@@ -22,6 +22,7 @@
 - API ключ ЯндексКарт
   
 ## Структура проекта
+```
 project-root/
 ├── InriaSerifFonts/ # Шрифты Inria Serif
 ├── about-us_elements/ # Элементы страницы "О нас"
@@ -46,3 +47,4 @@ project-root/
 ├── stalker.html # Страница "Urmareste-ne"
 ├── style.css # Основные стили
 └── README.md # Этот файл
+```
