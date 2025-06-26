@@ -4,10 +4,10 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш-username/название-репозитория.git
+   git clone https://github.com/andypowered/zanaveska.github.io.git
    ```
    или перейдите по ссылке : 
-## zanaveska.github.io
+# zanaveska.github.io
 
 # Учебный проект сайта
 
