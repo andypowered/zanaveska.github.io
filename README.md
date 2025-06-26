@@ -7,7 +7,7 @@
    git clone https://github.com/andypowered/zanaveska.github.io.git
    ```
    или перейдите по ссылке : 
-# zanaveska.github.io
+# https://andypowered.github.io/zanaveska.github.io/index.html
 
 # Учебный проект сайта
 
